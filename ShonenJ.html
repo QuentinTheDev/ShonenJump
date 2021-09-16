@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shonen Jump</title>
+    <link rel="stylesheet" href="CSS/master.css">
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="ShonenJ.html">Current Hits</a>
+  <a href="Author.html">Authors</a>
+  <a href="Sub.html">Subscription</a>
+</div>
+<div id="main">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <h2>Current Hits</h2>
+  <h4>These are the current hits serialized in Weekly Shonen Jump.</h4>
+</div>
+<div id="HeroA">
+  <h2>Enter the World of Heroes!</h2>
+  <img src="Hero.jpg" alt="My Hero Academia" height = "40%" width="40%">
+  <h4>My Hero Academia began serialization in 2014 and as quickly as it started it became a juggernaut of japanese comics. The story follows Izuku Midoriya, a boy born without superpowers (called Quirks) in a world where they have become commonplace, but who still dreams of becoming a superhero himself. He is scouted by All Might, Japan's greatest hero, who chooses Midoriya as his successor and shares his Quirk with him after recognizing his potential, and later helps to enroll him in a prestigious high school for heroes in training.</h4>
+
+</div>
+<div id="Juju">
+  <h2>When Faced with Death, What Will You Choose?</h2>
+  <img src="Juju.png" alt="Jujutsu Kaisen" height="40%" width="40%">
+  <h4>This manga is an up and coming masterpiece in my opnion, this manga began serialization in 2018 and was in fact a sequel to a one shot story called "Tokyo Metropolitian Cursed Technical School".  The story follows high school student Yuji Itadori as he joins a secret organization of Jujutsu Sorcerers in order to kill a powerful Curse named Ryomen Sukuna, of whom Yuji becomes the host.</h4>
+
+</div>
+<div id="One">
+  <h2>The Adventure of a Lifetime has Just started!</h2>
+  <img src="OIP.jpg" alt="One Piece" height="40%" width="40%">
+  <h4>This manga is the best selling manga of all time, this manga started serialization back in 1997 and since then has became a staple in manga. The story follows the adventures of Monkey D. Luffy, a boy whose body gained the properties of rubber after unintentionally eating a Devil Fruit. With his crew of pirates, named the Straw Hat Pirates, Luffy explores the Grand Line in search of the world's ultimate treasure known as "One Piece" in order to become the next King of the Pirates.</h4>
+
+</div>
+<div id="Boru">
+  <h2>The Continuation to the Story of Naruto Begins Here!</h2>
+  <img src="Bolt.jpg" alt="Boruto" height="40%" width="40%">
+  <h4>This manga is fresh off the heels of it's predecessor "Naruto".  Boruto is a spin-off and a sequel to Kishimoto's Naruto, which follows the exploits of Naruto Uzumaki's son, Boruto Uzumaki, and his ninja team.</h4>
+
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("HeroA").style.marginLeft = "250px";
+  document.getElementById("Juju").style.marginLeft = "250px";
+  document.getElementById("One").style.marginLeft = "250px";
+  document.getElementById("Boru").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("HeroA").style.marginLeft = "0";
+  document.getElementById("Juju").style.marginLeft = "0";
+  document.getElementById("One").style.marginLeft = "0";
+  document.getElementById("Boru").style.marginLeft = "0";
+}
+</script>
+
+  </body>
+</html>

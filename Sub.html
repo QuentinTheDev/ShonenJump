@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Subscription Form</title>
+    <link rel="stylesheet" href="CSS/master.css">
+  </head>
+  <body>
+
+</style>
+    </form>
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="ShonenJ.html">Current Hits</a>
+  <a href="Author.html">Authors</a>
+  <a href="Sub.html">Subscription</a>
+  </div>
+  <div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <h1>Would you like to subscribe to learn more about what Shonen Jump has to offer?</h1>
+  <h3>If so, please fill out the required fields to be able to log in</h3>
+  </div>
+  <script>
+  function validateform(){
+  var name=document.myform.name.value;
+  var email=document.myform.email.value;
+
+  if (name==null || name==""){
+    alert("Name can't be blank");
+    return false;
+  }else if(email.length<6){
+    alert("Email must be include @ if not please look at it again.");
+    return false;
+    }
+  }
+  </script>
+  <body>
+  <form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >
+  Name: <input type="text" name="name"><br/>
+  Email: <input type="email" name="email"><br/>
+  <input type="submit" value="Subscribe">
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("HeroA").style.marginLeft = "250px";
+    document.getElementById("Juju").style.marginLeft = "250px";
+    document.getElementById("One").style.marginLeft = "250px";
+    document.getElementById("Boru").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("HeroA").style.marginLeft = "0";
+    document.getElementById("Juju").style.marginLeft = "0";
+    document.getElementById("One").style.marginLeft = "0";
+    document.getElementById("Boru").style.marginLeft = "0";
+  }
+  </script>
+
+  </body>
+</html>
